@@ -1,5 +1,6 @@
 <div class="filters-component" [@openFilters]="currentState">
   <span (click)="change()" [@changeIcon]="currentState">
-    <mat-icon>keyboard_arrow_down</mat-icon>
+    <p *ngIf="open">Expandir <mat-icon>keyboard_arrow_down</mat-icon></p>
+    <p *ngIf="!open">Fechar <mat-icon>keyboard_arrow_up</mat-icon></p>
   </span>
 </div>
