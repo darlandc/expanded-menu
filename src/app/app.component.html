@@ -3,4 +3,8 @@
     <p *ngIf="open">Expandir <mat-icon>keyboard_arrow_down</mat-icon></p>
     <p *ngIf="!open">Fechar <mat-icon>keyboard_arrow_up</mat-icon></p>
   </span>
+  <br><br><br>
+  <div class="list" [@list]="currentState">
+    <p>TEXT HERE!</p>
+    </div>
 </div>
